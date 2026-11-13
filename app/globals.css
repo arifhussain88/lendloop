@@ -1,0 +1,28 @@
+:root { --bg:#f7f6f2; --card:#fff; --ink:#1d2320; --muted:#6b756f; --accent:#2f6f4f; --line:#e4e2da; --bad:#b3402f; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); line-height:1.5; }
+a { color: var(--accent); }
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+.logo { font-weight:700; font-size:1.25rem; letter-spacing:-.02em; text-decoration:none; color:var(--ink); }
+.hero { padding:56px 0 32px; }
+.hero h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-.03em; }
+.hero p { color:var(--muted); font-size:1.1rem; margin:0 0 20px; }
+.btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 16px; font-size:.95rem; cursor:pointer; text-decoration:none; display:inline-block; }
+.btn.secondary { background:transparent; color:var(--ink); border:1px solid var(--line); }
+.btn.danger { background:var(--bad); }
+.btn.small { padding:5px 10px; font-size:.85rem; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:12px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+.card h3 { margin:0 0 4px; font-size:1rem; }
+.muted { color:var(--muted); font-size:.88rem; }
+.badge { display:inline-block; font-size:.75rem; padding:2px 8px; border-radius:99px; background:#e8f1ec; color:var(--accent); margin-right:6px; }
+.badge.warn { background:#f6e7e3; color:var(--bad); }
+.tabs { display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 20px; }
+.tab { border:1px solid var(--line); background:transparent; border-radius:99px; padding:6px 14px; cursor:pointer; }
+.tab.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+form.stack { display:grid; gap:10px; max-width:420px; }
+input, select, textarea { padding:8px 10px; border:1px solid var(--line); border-radius:8px; font:inherit; background:#fff; }
+.row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+.error { color:var(--bad); font-size:.9rem; }
+footer { padding:40px 0; color:var(--muted); font-size:.85rem; }

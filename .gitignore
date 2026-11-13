@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.convex/
+.env
+.env.*
+!.env.example
+.vercel/
+*.tsbuildinfo
+coverage/
+n8n_data/
+.DS_Store
+STATUS.md
